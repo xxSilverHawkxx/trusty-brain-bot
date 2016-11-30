@@ -40,7 +40,7 @@ slapp.message('bones', ['mention', 'direct_message'], (msg) => {
 })
 
 slapp.message('heart', ['mention', 'direct_message'], (msg) => {
-  if (msg.body.event.text.includes(':heart') 
+  if (msg.body.event.text.includes(':heart')) 
 	return;
 
   msg.say(':heart-love:')
