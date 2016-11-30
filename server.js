@@ -15,23 +15,23 @@ var slapp = Slapp({
   context: Context()
 })
 
-slapp.message('bones', ['mention', 'direct_message'], (msg) => {
+slapp.message('/(?:^|[^:])bones/i', ['mention', 'direct_message'], (msg) => {
   msg.say(':bones-smiley:')
 })
 
-slapp.message('heart', ['mention', 'direct_message'], (msg) => {
+slapp.message('/(?:^|[^:])heart/i', ['mention', 'direct_message'], (msg) => {
   msg.say(':heart-love:')
 })
 
-slapp.message('lungs', ['mention', 'direct_message'], (msg) => {
+slapp.message('/(?:^|[^:])lungs/i', ['mention', 'direct_message'], (msg) => {
   msg.say(':lungs-happy:')
 })
 
-slapp.message('brain', ['mention', 'direct_message'], (msg) => {
+slapp.message('/(?:^|[^:])brain/i', ['mention', 'direct_message'], (msg) => {
   msg.say(':brain-idea:')
 })
 
-slapp.message('stomach', ['mention', 'direct_message'], (msg) => {
+slapp.message('/(?:^|[^:])stomach/i', ['mention', 'direct_message'], (msg) => {
   msg.say(':stomach-tongue:')
 })
 
