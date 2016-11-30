@@ -36,6 +36,9 @@ var slapp = Slapp({
 // })
 
 slapp.message('bones', ['mention', 'direct_message'], (msg) => {
+  if (msg.body.event.text.includes(':bones')) 
+	return;
+
   msg.say(':bones-smiley:')
 })
 
@@ -47,14 +50,23 @@ slapp.message('heart', ['mention', 'direct_message'], (msg) => {
 })
 
 slapp.message('lungs', ['mention', 'direct_message'], (msg) => {
+  if (msg.body.event.text.includes(':lungs')) 
+	return;
+
   msg.say(':lungs-happy:')
 })
 
 slapp.message('brain', ['mention', 'direct_message'], (msg) => {
+  if (msg.body.event.text.includes(':brain')) 
+	return;
+
   msg.say(':brain-idea:')
 })
 
 slapp.message('stomach', ['mention', 'direct_message'], (msg) => {
+  if (msg.body.event.text.includes(':stomach')) 
+	return;
+
   msg.say(':stomach-tongue:')
 })
 
