@@ -35,6 +35,29 @@ slapp.message('/.*(?:^|[^:])stomach.*/i', ['mention', 'direct_message'], (msg) =
   msg.say(':stomach-tongue:')
 })
 
+slapp.message('bones', ['mention', 'direct_message'], (msg) => {
+  msg.say(':bones-smiley:')
+})
+
+slapp.message('heart', ['mention', 'direct_message'], (msg) => {
+  if (msg.body.event.text.includes(':heart') 
+	return;
+
+  msg.say(':heart-love:')
+})
+
+slapp.message('lungs', ['mention', 'direct_message'], (msg) => {
+  msg.say(':lungs-happy:')
+})
+
+slapp.message('brain', ['mention', 'direct_message'], (msg) => {
+  msg.say(':brain-idea:')
+})
+
+slapp.message('stomach', ['mention', 'direct_message'], (msg) => {
+  msg.say(':stomach-tongue:')
+})
+
 // var HELP_TEXT = `
 // I will respond to the following messages:
 // \`help\` - to see this message.
